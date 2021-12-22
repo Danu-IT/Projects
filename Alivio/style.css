@@ -1,0 +1,302 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.header__content{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.header__menu{
+    display: flex;
+    justify-content: center;
+}
+
+.header__menu-content{
+    padding-right: 70px;
+}
+
+.text{
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 74px;
+    color: #01996D;
+}
+
+.text-lato{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    color: #292929;
+}
+
+.green__button{
+    background: #01996D;
+    border: 1px solid #01996D;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 10px 50px;
+}
+
+/*background*/
+
+.background{
+    height: 895px;
+    background-image: url(img/background/BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background__content{
+    padding-top: 175px;
+}
+
+.background__button{
+    display: inline-block;
+    color: white;
+}
+
+.background__edge{
+    max-width: 430px;
+    padding-bottom: 30px;
+}
+
+.background__text{
+    max-width: 420px;
+    padding-bottom: 30px;
+}
+
+.login{
+    padding-right: 35px;
+}
+
+/*solutions*/
+
+.solutions{
+    margin-top: 170px;
+}
+
+.solutions__texts{
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.solutions__title{
+    font-size: 50px;
+    max-width: 565px;
+}
+
+.solutions__text{
+    max-width: 669px;
+    padding-top: 20px;
+}
+
+.black__text{
+    color: black;
+}
+
+.solutions__form-title{
+    font-size: 30px;
+}
+
+.solutions__form{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 200px;
+    height: 1100px;
+}
+
+.solutions__card{
+    display: flex;
+    flex-direction: column;
+    max-width: 390px;
+    position: relative;
+    padding-top: 45px;
+}
+
+.solutions__form-title{
+    align-self: center; 
+    padding-bottom: 55px;
+}
+
+.solutions__form-text{
+    max-width: 382px;
+    text-align: left;
+    padding-bottom: 60px;
+}
+
+.number{
+    color: rgba(1, 153, 109, 0.2);
+    font-size: 150px;
+    font-weight: 400;
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+
+.card-double{
+    align-self: flex-end;
+    margin-bottom: 50px;
+}
+
+.solutions__marg-title{
+    padding-bottom: 40px;
+    padding-right: 50px;
+}
+
+.solutions__marg-text{
+    padding-bottom: 50px;
+}
+
+.card-third{
+    margin-top: 65px;
+}
+
+.solutions__text-double{
+    align-self:flex-end;
+}
+
+.solutions__images{
+    position: relative;
+}
+
+.face__image{
+    position: absolute;
+    left: 207px;
+    top: 226px;
+}
+
+.text__white{
+    color: #FFFFFF;
+}
+
+/*green__block*/
+
+.green__block{
+    background-color: #245852;
+}
+
+.green__text{
+    font-weight: 400;
+    font-size: 25px;
+    padding-top: 35px;
+    padding-bottom: 60px;
+    max-width: 550px;
+}
+
+.green__main{
+    display: flex;
+    justify-content: space-between;
+    padding: 229px 0 180px 0;
+}
+
+.green__block-content{
+    padding-top: 70px;
+}
+
+/*product__content*/
+
+.our__product{
+    padding-top: 120px;
+    padding-bottom: 240px;
+}
+
+.product__title{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.product__content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.product__resume{
+    background: white;
+    border-radius: 3.72971px;
+    max-width: 300px;
+    padding: 25px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: drop-shadow(0px 3.62249px 18.1125px rgba(165, 165, 165, 0.25));
+    position: absolute;
+    top:360px;
+    left: -70px;
+}
+
+.text__resume{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.product__text{
+    max-width: 580px;
+}
+
+.product__content-text{
+    padding-bottom: 20px;
+}
+
+.product__text-list{
+    max-width: 520px;
+    padding-bottom: 40px;
+}
+
+.text__list{
+    list-style-type:disc;
+}
+
+.list__padding{
+    padding-bottom: 15px;
+}
+
+.resume__text{
+    font-size: 15px;
+    color: black;
+}
+
+.product__img-content{
+    position: relative;
+}
+
+/*footer*/
+
+.green__footer{
+    padding:95px 0 140px 0;
+    box-sizing: border-box;
+}
+
+.footer__text,.footer__list-text{
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+.link__footer{
+    color: white;
+}
+
+.line__resume{
+    margin-bottom: 20px;
+    width:110px;
+    color:black;
+}
