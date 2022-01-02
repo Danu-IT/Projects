@@ -82,8 +82,7 @@ h6 {
 }
 
 .container-1 input#search{
-    min-width: 550px;
-    max-width: 50px;
+    width: 550px;
     height: 40px;
     background: #1B1A21;
     border: none;
@@ -113,12 +112,13 @@ h6 {
     flex: 1 1 auto;
 }
 .page__discover{
-    margin: 197px 0 80px 0;
+    margin: 100px 0 80px 0;
 }
 /*------------HEADER----------------------*/
-
+.header__container{
+    display: flex;
+}
 .header{
-    position: absolute;
     width: 100%;
     top: 0;
     left: 0;
@@ -186,6 +186,37 @@ h6 {
     letter-spacing: 0.02em;
 }
 
+@media(max-width:1358px){
+    .header__menu{
+        display: none;
+    }
+    .header__container{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media(max-width:1024px){
+    .header__buttons{
+        display: none;
+    }
+}
+@media(max-width:776px){
+    .container-1 input#search{
+        width: 200px;
+    }
+    .text__logo{
+        font-weight: 600;
+    }
+}
+@media(max-width:450px){
+    .header__body>*:not(:last-child) {
+        margin: 0 5px 0 0;
+    }
+    .header__logo{
+        margin-left: 10px;
+    }
+}
+
 /*------------DISCOVER------------*/
 .discover__content-full {
     display: flex;
@@ -233,6 +264,69 @@ h6 {
     border: solid black 17px;
 }
 
+@media(max-width: 1328px){
+    .div__image{
+        display:none;
+    }
+    .discover__title{
+        width: 70%;
+        text-align: center;
+        font-size: 30px;
+    }
+    .discover__text{
+        width: 70%;
+        text-align: center;
+    }
+    .discover__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .page__discover{
+        margin: 70px 0 40px 0;
+    }
+    .discover__sound{
+        display: none;
+    }
+}
+@media(max-width: 1024px){
+    .page__discover{
+        margin: 30px 0 40px 0;
+    }
+    .discover__content>*:not(:last-child) {
+        margin: 0 0 30px 0;
+    }
+}
+@media(max-width: 767px){
+    .discover__title{
+        width: 80%;
+        text-align: center;
+        font-size: 30px;
+    }
+    .discover__text{
+        width: 100%;
+        text-align: center;
+        
+    }
+}
+@media(max-width: 475px){
+    .discover__text{
+        max-width: 250px;
+    }
+    .discover__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .discover__item>*:not(:last-child){
+        margin: 0 0 10px 0;
+    }
+    .discover__title{
+        font-size: 22px;
+    }
+}
+
 /*------------------TREND---------------*/
 
 .trend__text{
@@ -254,7 +348,7 @@ h6 {
 }
 .trend__cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .trend__card {
     flex: 1 1 20%;
@@ -297,6 +391,29 @@ h6 {
     line-height: 116%;
     letter-spacing: 0.02em;
 }
+@media(max-width: 1250px){
+    .trend__card{
+       
+    }
+}
+@media(max-width: 1024px){
+    .trend__cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+    }
+    .trend__card:not(:last-child) {
+        margin: -10px 0 20px 0;
+    }
+    .trend__card{
+        width: 250px;
+    }
+    .text-title{
+        font-size: 22px;
+    }
+}
 
 /*------------------PICTURE------------*/
 .pictures__text {
@@ -309,7 +426,6 @@ h6 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 -55px;
 }
 .pictures__body{
     display: flex;
@@ -367,7 +483,15 @@ h6 {
     background: linear-gradient(135deg, #FF00B8 7.81%, #FF005C 100%);
     color: #ffffff;
 }
-
+@media(max-width: 1024px){
+    .pictures__text {
+        margin: 25px 0 67px 0;
+    }
+    .pictures__button{
+        margin: 15px 0 40px 0;
+        padding: 20px 50px;
+    }
+}
 /*------------footer----------------*/
 
 .footer__body {
@@ -463,4 +587,32 @@ h6 {
 }
 .footer__column-link:hover{
     text-decoration: underline;
+}
+
+@media(max-width: 920px){
+    .footer__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 30px 0;
+        text-align: center;
+    }
+    .footer__body>*:not(:last-child){
+        margin: 0 0 20px 0;
+    }
+    .subscribe__button{
+        font-weight: 400;
+        left: 110px;
+    }
+}
+
+@media(max-width: 767px){
+    .contact__title{
+        display: none;
+    }
+    .footer__contacts {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 20px 0;
+    }
 }
